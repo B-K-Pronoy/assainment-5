@@ -73,3 +73,20 @@ function alertFantion(){
     const alertCatch=document.getElementById('forBlance');
     alertCatch.style.display='Block'
   }
+
+  function expenseBigIncome(){
+    const alertCatch=document.getElementById('BigExpense');
+    alertCatch.style.display='Block'
+  }
+
+
+  /* string errow */
+
+  function ifstring(){
+   const catchInpute= document.getElementById('inputeFiled');
+    const catchInputeValu=catchInpute.value;
+    catchInputeValu.value='';
+    return catchInputeValu;
+  }
+
+  const inputeCatch=ifstring();

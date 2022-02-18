@@ -90,7 +90,11 @@ input{
     padding: 10px;
     margin: 10px;
 }
-
+#BigExpense{
+    display: none;
+    padding: 10px;
+    margin: 10px;
+}
 
 #forBlance{
     display: none;
@@ -98,6 +102,8 @@ input{
     padding: 10px;
     margin: 10px;
 }
+
+
 
 #Claclucate{
     display: block;
@@ -130,6 +136,8 @@ input{
 #notEnoughtMoney{
     display: none;
 }
+
+
 #saveBtn{
     width: 25%;
 }

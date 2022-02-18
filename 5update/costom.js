@@ -14,7 +14,7 @@ const ClaclucateBtn=document.getElementById('Claclucate').addEventListener('clic
    }
     const inputeAmaunt=parseInt(inputeTextOfIncome);
 
-        
+    
     // for food
     const inputeFood=document.getElementById('fod');
     const inputeTextOfFood=inputeFood.value;
@@ -61,20 +61,26 @@ const ClaclucateBtn=document.getElementById('Claclucate').addEventListener('clic
     //for totla expense
 
     const totalExpense=foodAmount+rentAmount+colthesAmount;
-    if(totalExpense>inputeAmaunt){
-      alertFantionForBlance();
-    }
-    else if(totalExpense<0){
-      alertFantionForTotalExpnse();
-    }
-   
+    
 
     const totalExpenseShow=document.getElementById('totalExpen');
    totalExpenseShow.innerText=totalExpense;
 
    const totalBlance=document.getElementById('totalBlance');
        const totalBlanceAmaunt=inputeAmaunt-totalExpense;
-        const blance=totalBlanceAmaunt;
+        const blance= parseInt(totalBlanceAmaunt);
+       
+       const againCatchIncome= document.getElementById('incomeAmaunt');
+        const againInputeTextOfIncome= againCatchIncome.value ;
+              
+        if(totalExpense>againInputeTextOfIncome){
+         
+          expenseBigIncome();
+        }
+        else if(totalExpense<0){
+          alertFantionForTotalExpnse();
+        }
+       
         totalBlance.innerText=blance;
     
        
