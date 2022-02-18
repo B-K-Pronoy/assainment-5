@@ -2,8 +2,9 @@ const ClaclucateBtn=document.getElementById('Claclucate').addEventListener('clic
 
     // for income
     const inputeIncome=document.getElementById('incomeAmaunt');
+   
     const inputeTextOfIncome=inputeIncome.value;
-
+    
 
     if (inputeTextOfIncome=== '' || inputeTextOfIncome == null){
       alertFantionForIncomeEmty();
@@ -12,8 +13,9 @@ const ClaclucateBtn=document.getElementById('Claclucate').addEventListener('clic
    else if(inputeTextOfIncome<0){
     alertFantionForNagative();
    }
-    const inputeAmaunt=parseInt(inputeTextOfIncome);
 
+    const inputeAmaunt=parseInt(inputeTextOfIncome);
+  
     
     // for food
     const inputeFood=document.getElementById('fod');
@@ -25,6 +27,8 @@ const ClaclucateBtn=document.getElementById('Claclucate').addEventListener('clic
     else if(inputeTextOfFood<0){
       alertFantionForNagative();
      }
+     
+
     const foodAmount=parseInt(inputeTextOfFood);
 
     //for rent
@@ -39,7 +43,7 @@ const ClaclucateBtn=document.getElementById('Claclucate').addEventListener('clic
       alertFantionForNagative();
   
      }     
-
+     
     const rentAmount=parseInt(inputeTextOfRent);
     //for clothes
     const inputeClothes=document.getElementById('clothes');
@@ -52,8 +56,7 @@ const ClaclucateBtn=document.getElementById('Claclucate').addEventListener('clic
       alertFantionForNagative();
   
      }
-
-    
+     
     const colthesAmount=parseInt(inputeTextOfClothes);
     //for totla expense
 
@@ -79,13 +82,13 @@ const ClaclucateBtn=document.getElementById('Claclucate').addEventListener('clic
         }
        
         totalBlance.innerText=blance;
-    
        
-
+       
+        
 });
  // for save
 const  saveBtnCatch=document.getElementById('saveBtn').addEventListener('click',function(){
-
+ 
   const incomeAmaunt=document.getElementById('incomeAmaunt');
   const incomeTaka= parseInt(incomeAmaunt.value);
  
@@ -105,6 +108,7 @@ const  saveBtnCatch=document.getElementById('saveBtn').addEventListener('click',
 
         const priveBlance=document.getElementById('totalBlance');
       const privesBlanceTaka=parseInt(priveBlance.innerText);
+      
       if(saveTotalTk>privesBlanceTaka){
         alertFantionForSaveTotalTaka();
       }
@@ -113,9 +117,9 @@ const  saveBtnCatch=document.getElementById('saveBtn').addEventListener('click',
       }
       else{
         remainingAmaunt.innerText=privesBlanceTaka-saveTotalTk;
-
-      }
         
+      }
+      
     });
     
-   
+  
