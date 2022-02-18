@@ -3,14 +3,14 @@ const ClaclucateBtn=document.getElementById('Claclucate').addEventListener('clic
     // for income
     const inputeIncome=document.getElementById('incomeAmaunt');
     const inputeTextOfIncome=inputeIncome.value;
+
+
     if (inputeTextOfIncome=== '' || inputeTextOfIncome == null){
       alertFantionForIncomeEmty();
     
     }
    else if(inputeTextOfIncome<0){
     alertFantionForNagative();
-   
-
    }
     const inputeAmaunt=parseInt(inputeTextOfIncome);
 
@@ -24,10 +24,7 @@ const ClaclucateBtn=document.getElementById('Claclucate').addEventListener('clic
     }
     else if(inputeTextOfFood<0){
       alertFantionForNagative();
-  
      }
-
-
     const foodAmount=parseInt(inputeTextOfFood);
 
     //for rent

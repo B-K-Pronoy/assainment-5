@@ -95,6 +95,13 @@ input{
     padding: 10px;
     margin: 10px;
 }
+#stringErrow{
+    display: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+
 
 #forBlance{
     display: none;

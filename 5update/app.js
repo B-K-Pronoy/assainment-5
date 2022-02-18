@@ -82,11 +82,10 @@ function alertFantion(){
 
   /* string errow */
 
-  function ifstring(){
-   const catchInpute= document.getElementById('inputeFiled');
-    const catchInputeValu=catchInpute.value;
-    catchInputeValu.value='';
-    return catchInputeValu;
+  function stringErrow(){
+   const alertCatch=document.getElementById('stringErrow');
+   alertCatch.style.display='Block'
   }
 
-  const inputeCatch=ifstring();
+ 
+
