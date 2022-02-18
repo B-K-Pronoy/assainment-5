@@ -1,0 +1,153 @@
+#daller_icon{
+display: none;
+ width: 40px;
+height: 40px;
+}
+section{
+    color:white;
+}
+.labelId{
+    
+    width: 100px;
+    display: inline-block;
+}
+label{
+
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+input{
+    /* margin-left: 20px; */
+    align-items: center;
+}
+#container{
+    display:none ;
+    width: 100%;
+    border: 2px solid red;
+}
+
+/*alert section desin here*/
+
+#ifIncomNegative{
+  display: none;
+  width: 100%;
+  height: 100px;
+
+}
+
+#forIncomEmpty{
+    display: none;
+  width: 100%;
+  height: 100px;
+
+}
+#forfoodEmpty{
+    display: none;
+    width: 100%;
+    height: 100px; 
+
+}
+#forRentEmpty{
+    display: none;
+    width: 100%;
+    height: 100px; 
+
+}
+#forClothEmpty{
+    display: none;
+    width: 100%;
+    height: 100px;  
+}
+#forTotalExpense{
+    display: none;
+    width: 100%;
+    height: 100px;  
+}
+
+
+.alert{
+    display: none;
+    width: 100%;
+    height: auto;
+}
+#income{
+    display: none;
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+}
+#forFood{
+    display: none;
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+}
+
+#saveBlanceErrow{
+    display: none;
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+#forBlance{
+    display: none;
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+}
+
+#Claclucate{
+    display: block;
+}
+
+#warning{
+ 
+    width: 50px;
+    height: 50px;
+
+}
+#warning i{
+   
+    padding: 3px;
+    margin: 3px;
+    font-size: 20px;
+}
+#warning-masses{
+    
+    width: 100%;
+    height: auto;
+}
+#warning-masses p{
+   
+    /* padding: 3px;
+    margin: 3px; */
+    font-size: large;
+
+}
+#notEnoughtMoney{
+    display: none;
+}
+#saveBtn{
+    width: 25%;
+}
+input{
+    width: 70%;
+    height: 40px;
+}
+#container1{
+    position: absolute;
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    input{
+        width: 100%;
+        height: 40px;
+    }
+   
+    }

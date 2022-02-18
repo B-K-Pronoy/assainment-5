@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://kit.fontawesome.com/ea59b0fcf9.js" ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="subindex.html">
+</head>
+<body>
+    <section class="container">
+        <h1 style="text-align: center; color: green; padding: 10px;"> My Account <img id="daller_icon" src="money-bag.png" alt="">  </h1>
+       
+       
+        <!--erro for income-->
+<section class="forIncomEmpty" id="forIncomEmpty">
+                            
+    <div class="alert alert-danger d-flex align-items-center justify-content-center">
+        <div id="warning"> <i class="fa-solid fa-circle-exclamation"></i> </div>
+        <div id="warning-masses"> <p> Income Fill is Empty </p></div>
+        <div>
+</section>
+<section class="" id="ifIncomNegative">
+                            
+
+    <div class="alert alert-danger d-flex align-items-center justify-content-center">
+        <div id="warning"> <i class="fa-solid fa-circle-exclamation"></i> </div>
+        <div id="warning-masses"> <p> You can not negative inpute here </p></div>
+        <div>
+</section>
+    
+
+<!--erro for food-->
+<section class="forfoodEmpty" id="forfoodEmpty">
+                            
+    <div class="alert alert-danger d-flex align-items-center justify-content-center">
+        <div id="warning"> <i class="fa-solid fa-circle-exclamation"></i> </div>
+        <div id="warning-masses"> <p> Food Fill is Empty </p></div>
+        <div>
+</section>
+
+
+<!--erro for rent-->
+<section class="forRentEmpty" id="forRentEmpty">
+                            
+    <div class="alert alert-danger d-flex align-items-center justify-content-center">
+        <div id="warning"> <i class="fa-solid fa-circle-exclamation"></i> </div>
+        <div id="warning-masses"> <p> Rent Fill is Empty </p></div>
+        <div>
+</section>
+
+
+<!--erro for clothes-->
+<section class="forClothEmpty" id="forClothEmpty">
+                            
+    <div class="alert alert-danger d-flex align-items-center justify-content-center">
+        <div id="warning"> <i class="fa-solid fa-circle-exclamation"></i> </div>
+        <div id="warning-masses"> <p> Clothes Fill is Empty </p></div>
+        <div>
+</section>
+
+
+<!--erro for total expense-->
+
+<section class="forTotalExpense" id="forTotalExpense">
+                            
+    <div class="alert alert-danger d-flex align-items-center justify-content-center">
+        <div id="warning"> <i class="fa-solid fa-circle-exclamation"></i> </div>
+        <div id="warning-masses"> <p> Total Expense is not granted </p></div>
+        <div>
+</section>
+<!--erro for total expenseErrow-->
+
+<section class="saveBlanceErrow" id="saveBlanceErrow">
+                            
+    <div class="alert alert-danger d-flex align-items-center justify-content-center">
+        <div id="warning"> <i class="fa-solid fa-circle-exclamation"></i> </div>
+        <div id="warning-masses"> <p> No Enought Money for save </p></div>
+        <div>
+</section>
+
+
+
+
+
+<!--erro-->
+<section class="notEnoughtMoney" id="notEnoughtMoney">
+                            
+    <div class="alert alert-danger d-flex align-items-center justify-content-center">
+        <div id="warning"> <i class="fa-solid fa-circle-exclamation"></i> </div>
+        <div id="warning-masses"> <p> No enoght Money for saving!! </p></div>
+        <div>
+</section>
+<
+        <main class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-6 col-sm-12 col-12 bg-secondary"> 
+                    <img src="download.jpg" class="w-100 height: auto img-fluid p-3" alt="photo">
+            </div>
+                <div class="container-fluid col-lg-6 col-6 col-sm-12 col-12 bg-dark">
+                
+                    <div class="form"> 
+                        <h3 style="text-align: center; margin-top: 10px;"> Income</h3>
+                        <!--erro-->
+                        <section class="container" id="container">
+                            
+                            <div class="alert alert-danger d-flex align-items-center justify-content-center">
+                                <div id="warning"> <i class="fa-solid fa-circle-exclamation"></i> </div>
+                                <div id="warning-masses"> <p>Negative value is not allow, so a valid number inpute here!!! </p></div>
+                                <div>
+                        </section>
+                          
+                        <label class="labelId" id="income" for="incomeAmaunt">
+                            Income:</label>
+                            <input  id="incomeAmaunt"  type="text">
+                     
+                        <h3 style="text-align: center; margin-top: 10px"> Expenses </h3>
+                        <label class="labelId" for="fod">
+                            
+                             Food:</label>
+                            <input   id="fod"  type="number"> <br>
+                        
+                        <label class="labelId" for="rent">
+                             Rent:</label>
+                            <input  id="rent"  type="number" ><br>
+                        
+                        <label class="labelId" id="labelId" for="clothes">
+                            Clothes: </label>
+                            <input  id="clothes"  type="number"><br>
+                       
+                        <button id="Claclucate" type="button" class="btn btn-primary btn-lg  mx-auto m-3">Claclucate</button>
+                        <h3> Total Expenses: <span id="totalExpen"> </span></h3>
+                        <h3> Blance: <span id="totalBlance"> </span></h3>
+                        
+                        <label for="saveInpute"> Save:
+                            <input class="col-sm-6 mx-auto" type="text" name="save" id="saveInpute"> %
+                        </label>
+                        
+                        <button  id="saveBtn" type="button" class="btn btn-primary btn-lg ps-3">Save</button>
+                    </div>
+                    <h3> Saving Amount : <span id="saveAmount"> </span></h3>
+                    <h3> Remaining Balance : <span id="remainingBlance"> </span></h3>
+                </div>
+              </div>
+        </main>
+    </section>
+    <script src="costom.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
